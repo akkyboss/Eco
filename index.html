@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,19 +8,23 @@
 <style>
 body{
     margin:0;
-    font-family: Arial, sans-serif;
-    background:#f9f9f9;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background:#f8faf9;
     color:#333;
 }
 header{
-    background:#2e8b57;
+    background:linear-gradient(135deg,#1e7f5c,#2fa56f);
     color:#fff;
-    padding:60px 20px;
+    padding:50px 20px;
     text-align:center;
+}
+header img{
+    max-width:200px;
+    margin-bottom:15px;
 }
 header h1{
     font-size:36px;
-    margin-bottom:10px;
+    margin:10px 0;
 }
 header p{
     font-size:18px;
@@ -28,48 +32,60 @@ header p{
 .btn{
     display:inline-block;
     margin:10px;
-    padding:12px 25px;
+    padding:14px 28px;
     background:#fff;
-    color:#2e8b57;
+    color:#1e7f5c;
     text-decoration:none;
-    font-weight:bold;
-    border-radius:5px;
+    font-weight:600;
+    border-radius:30px;
 }
 .section{
-    padding:50px 20px;
+    padding:60px 20px;
     text-align:center;
 }
 .section h2{
-    color:#2e8b57;
-    margin-bottom:20px;
+    color:#1e7f5c;
+    margin-bottom:25px;
+    font-size:30px;
 }
-.services, .features{
+.grid{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-    gap:20px;
-    max-width:1000px;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+    max-width:1100px;
     margin:auto;
 }
 .box{
     background:#fff;
-    padding:20px;
-    border-radius:8px;
-    box-shadow:0 0 10px rgba(0,0,0,0.1);
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.08);
 }
-.steps{
-    max-width:800px;
-    margin:auto;
+.highlight{
+    background:#eaf6f0;
 }
 .price{
     font-size:22px;
-    color:#2e8b57;
+    color:#1e7f5c;
     font-weight:bold;
 }
 footer{
-    background:#222;
+    background:#0f3d2e;
     color:#fff;
     text-align:center;
-    padding:20px;
+    padding:25px;
+    font-size:14px;
+}
+.whatsapp{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#25d366;
+    color:#fff;
+    padding:14px 20px;
+    border-radius:50px;
+    text-decoration:none;
+    font-weight:bold;
 }
 </style>
 </head>
@@ -77,62 +93,67 @@ footer{
 <body>
 
 <header>
+    <img src="logo.jpg" alt="Eco Clean Laundry Logo">
     <h1>Eco Clean Laundry</h1>
-    <p>Safai Jo Nature Se Pyaar Kare 🌿</p>
-    <a href="tel:9XXXXXXXXX" class="btn">📞 Call Now</a>
-    <a href="https://wa.me/91XXXXXXXXXX" class="btn">💬 WhatsApp</a>
+    <p>Fresh Clothes. Happy Life. 🌿</p>
+    <p>Laundry • Dry Clean • Iron</p>
+    <a href="tel:9783906100" class="btn">📞 Call Now</a>
+    <a href="https://wa.me/919783906100" class="btn">💬 WhatsApp</a>
 </header>
 
 <section class="section">
-    <h2>Hamari Services</h2>
-    <div class="services">
-        <div class="box">Washing & Drying</div>
-        <div class="box">Steam Ironing</div>
-        <div class="box">Premium Fabric Care</div>
-        <div class="box">Stain Removal</div>
-        <div class="box">Bulk / Family Laundry</div>
-        <div class="box">Hotel / Hostel Laundry</div>
+    <h2>Our Services</h2>
+    <div class="grid">
+        <div class="box">🧺 Washing & Drying</div>
+        <div class="box">🔥 Steam Ironing</div>
+        <div class="box">👗 Dry Cleaning</div>
+        <div class="box">🧼 Stain Removal</div>
+        <div class="box">🏠 Home / Family Laundry</div>
+        <div class="box">🏨 Hotel / Hostel Laundry</div>
     </div>
 </section>
 
-<section class="section" style="background:#eef7f1;">
-    <h2>Why Eco Clean Laundry?</h2>
-    <div class="features">
-        <div class="box">🌿 Eco-Friendly Detergent</div>
-        <div class="box">💧 Less Water Usage</div>
-        <div class="box">👕 Kapdon Ki Extra Care</div>
+<section class="section highlight">
+    <h2>Why Choose Us?</h2>
+    <div class="grid">
+        <div class="box">🌿 Eco-Friendly Detergents</div>
+        <div class="box">💧 Less Water, More Care</div>
+        <div class="box">👕 Perfect Finish</div>
         <div class="box">🚚 Free Pickup & Delivery</div>
-        <div class="box">⏱ Fast Service</div>
-        <div class="box">🧼 Hygienic Cleaning</div>
+        <div class="box">⏱ On-Time Service</div>
+        <div class="box">🛡 100% Safe & Hygienic</div>
     </div>
 </section>
 
 <section class="section">
     <h2>How It Works</h2>
-    <div class="steps">
-        <p>📞 Call / WhatsApp Karo</p>
-        <p>🚚 Kapde Pickup Honge</p>
-        <p>✨ Clean Kapde Time Par Delivery</p>
+    <div class="grid">
+        <div class="box">📞 Call / WhatsApp Us</div>
+        <div class="box">🚚 We Pick Up Clothes</div>
+        <div class="box">✨ Clean & Deliver Back</div>
     </div>
 </section>
 
-<section class="section" style="background:#eef7f1;">
+<section class="section highlight">
     <h2>Pricing (Sample)</h2>
-    <p class="price">Washing: ₹XX / Kg</p>
-    <p class="price">Ironing: ₹XX / Piece</p>
-    <p class="price">Premium Care: ₹XX / Kg</p>
+    <p class="price">Washing – ₹XX / Kg</p>
+    <p class="price">Ironing – ₹XX / Piece</p>
+    <p class="price">Dry Clean – ₹XX / Item</p>
 </section>
 
 <section class="section">
     <h2>Contact Us</h2>
-    <p>📍 Address: Your Area Name</p>
-    <p>📞 Phone: 9XXXXXXXXX</p>
-    <p>🕘 Time: 8 AM – 9 PM</p>
+    <p>📍 Your Area / City Name</p>
+    <p>📞 97839 06100</p>
+    <p>🕘 8 AM – 9 PM (All Days)</p>
 </section>
 
 <footer>
-    © 2026 Eco Clean Laundry | Clean Clothes • Clean Nature 🌍
+    © 2026 Eco Clean Laundry  
+    <br>Clean Today • Better Tomorrow 🌍
 </footer>
+
+<a class="whatsapp" href="https://wa.me/919783906100">💬 Chat on WhatsApp</a>
 
 </body>
 </html>
