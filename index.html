@@ -1,159 +1,101 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Eco Clean Laundry</title>
-
-<style>
+<title>Eco Clean Laundry</title><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet"><style>
 body{
     margin:0;
-    font-family: 'Segoe UI', Arial, sans-serif;
-    background:#f8faf9;
-    color:#333;
+    font-family:'Poppins',sans-serif;
+    background:#f5f7f6;
 }
+
+/* HERO */
 header{
     background:linear-gradient(135deg,#1e7f5c,#2fa56f);
     color:#fff;
-    padding:50px 20px;
     text-align:center;
-}
-header img{
-    max-width:200px;
-    margin-bottom:15px;
+    padding:60px 20px;
 }
 header h1{
-    font-size:36px;
     margin:10px 0;
+    font-size:32px;
 }
 header p{
-    font-size:18px;
+    font-size:16px;
 }
 .btn{
     display:inline-block;
     margin:10px;
-    padding:14px 28px;
+    padding:12px 25px;
     background:#fff;
     color:#1e7f5c;
+    border-radius:30px;
     text-decoration:none;
     font-weight:600;
-    border-radius:30px;
 }
-.section{
-    padding:60px 20px;
-    text-align:center;
+
+/* SERVICES */
+.services{
+    padding:30px 15px;
 }
-.section h2{
-    color:#1e7f5c;
-    margin-bottom:25px;
-    font-size:30px;
-}
-.grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-    gap:25px;
-    max-width:1100px;
-    margin:auto;
-}
-.box{
+.card{
     background:#fff;
-    padding:25px;
-    border-radius:12px;
-    box-shadow:0 10px 25px rgba(0,0,0,0.08);
+    border-radius:20px;
+    overflow:hidden;
+    margin-bottom:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.1);
 }
-.highlight{
-    background:#eaf6f0;
+.card img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
 }
-.price{
+.img-box{
+    position:relative;
+}
+.overlay-text{
+    position:absolute;
+    bottom:15px;
+    left:15px;
+    color:#fff;
     font-size:22px;
-    color:#1e7f5c;
-    font-weight:bold;
+    font-weight:600;
+    text-shadow:0 3px 10px rgba(0,0,0,0.6);
 }
+.card-title{
+    padding:15px;
+    font-size:16px;
+}
+
+/* BOOK BUTTON */
+.book-btn{
+    display:block;
+    margin:30px auto;
+    padding:15px 40px;
+    background:#1e9ec9;
+    color:#fff;
+    border-radius:30px;
+    text-align:center;
+    width:200px;
+    text-decoration:none;
+    font-size:18px;
+    box-shadow:0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* FOOTER */
 footer{
-    background:#0f3d2e;
+    background:#1e9ec9;
     color:#fff;
     text-align:center;
-    padding:25px;
-    font-size:14px;
+    padding:40px 20px;
+    font-size:18px;
 }
+
+/* WHATSAPP FLOAT */
 .whatsapp{
     position:fixed;
     bottom:20px;
     right:20px;
     background:#25d366;
     color:#fff;
-    padding:14px 20px;
-    border-radius:50px;
-    text-decoration:none;
-    font-weight:bold;
-}
-</style>
-</head>
-
-<body>
-
-<header>
-    <img src="logo.jpg" alt="Eco Clean Laundry Logo">
-    <h1>Eco Clean Laundry</h1>
-    <p>Fresh Clothes. Happy Life. 🌿</p>
-    <p>Laundry • Dry Clean • Iron</p>
-    <a href="tel:9783906100" class="btn">📞 Call Now</a>
-    <a href="maps.app.goo.gl/RmEFZLpTi1hyhK4D7" class="btn">📍 location</a>
-</header>
-
-<section class="section">
-    <h2>Our Services</h2>
-    <div class="grid">
-        <div class="box">🧺 Washing & Drying</div>
-        <div class="box">🔥 Steam Ironing</div>
-        <div class="box">👗 Dry Cleaning</div>
-        <div class="box">🧼 Stain Removal</div>
-        <div class="box">🏠 Home / Family Laundry</div>
-        <div class="box">🏨 Hotel / Hostel Laundry</div>
-    </div>
-</section>
-
-<section class="section highlight">
-    <h2>Why Choose Us?</h2>
-    <div class="grid">
-        <div class="box">🌿 Eco-Friendly Detergents</div>
-        <div class="box">💧 Less Water, More Care</div>
-        <div class="box">👕 Perfect Finish</div>
-        <div class="box">🚚 Free Pickup & Delivery</div>
-        <div class="box">⏱ On-Time Service</div>
-        <div class="box">🛡 100% Safe & Hygienic</div>
-    </div>
-</section>
-
-<section class="section">
-    <h2>How It Works</h2>
-    <div class="grid">
-        <div class="box">📞 Call / WhatsApp Us</div>
-        <div class="box">🚚 We Pick Up Clothes</div>
-        <div class="box">✨ Clean & Deliver Back</div>
-    </div>
-</section>
-
-<section class="section highlight">
-    <h2>Pricing (Sample)</h2>
-    <p class="price">Washing – ₹120 / Kg</p>
-    <p class="price">Ironing – ₹15 / Piece</p>
-    <p class="price">Dry Clean – ₹120 / Item</p>
-</section>
-
-<section class="section">
-    <h2>Contact Us</h2>
-    <p>📍 plot no ., Mansarover near iscon temple</p>
-    <p>📞 97839 06100</p>
-    <p>🕘 8 AM – 9 PM (All Days)</p>
-</section>
-
-<footer>
-    © 2026 Eco Clean Laundry  
-    <br>Clean Today • Better Tomorrow 🌍
-</footer>
-
-<a class="whatsapp" href="https://wa.me/919783906100">💬 Chat on WhatsApp</a>
-
-</body>
-</html>
+    padding:14
